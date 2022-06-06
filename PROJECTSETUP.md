@@ -46,7 +46,7 @@
    3. `composer update`
    4. `npm install`
    5. `php artisan optimize`
-   6. `npm run watch`
+   6. `npm run dev`
 
 ## Backup From Atlas Live DB  
 
@@ -63,7 +63,7 @@
 
 If all is fine then your site is working fine. Then you can open your site on localhost : [http://localhost:8100](http://localhost:8100)
 
-## Steps to deploy changes to production.:
+## Steps to deploy changes to production:
 
 Let suppose you have made change in the file and you have checked all is fine and you are working in the deveop branch directly.
 Then you need follow the steps to deploy your changes :
@@ -75,8 +75,6 @@ Then you need follow the steps to deploy your changes :
 After that you need to connect the live server ssh
 
 Connect to ssh and then run below command
-
-#### Purge cache from Cloudfare
 
 1. `sudo su`
 2. `cd /var/html/prosal`
@@ -91,9 +89,9 @@ Connect to ssh and then run below command
 9. `cd ..`
 10. `npm install`
 11. `php artisan optimize`
-12. `npm run watch`
+12. `npm run dev`
 
-##### after installing any package if site is not working, then run following command :<bR>
+##### After installing any package if site is not working, then run following command :<bR>
 
 1.  `composer update`
 

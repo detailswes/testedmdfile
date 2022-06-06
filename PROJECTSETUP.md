@@ -1,6 +1,6 @@
 ## Setup a development environment  from scratch
 
-1. Install the dependencies and devDependencies and start the server.
+1. Take clone from git by using the below command.
 
    1. `git clone https://nylemalik@github.com/nylemalik/prosal.git`
    2. `cd prosal`
@@ -71,8 +71,6 @@ Then you need follow the steps to deploy your changes :
 1.  `git add 'you need put file name'`
 2.  `git commit -m 'Enter commit message'`
 3.  `git push origin develop`
-
-After that you need to connect the live server ssh
 
 Connect to ssh and then run below command
 

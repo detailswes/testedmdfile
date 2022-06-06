@@ -50,7 +50,7 @@
 
 1. docker exec -it mongodb /bin/bash (this command take you inside the continer then you run the below command)
    ```sh
-   mongodump --uri="mongodb+srv://URL" --out "path_to_store_mongodb"   (this is live site url,so csrfully run the commands)
+   mongodump --uri="mongodb+srv://URL" --out "/var/www/html/path_to_store_mongodb"   (this is live site url,so csrfully run the commands)
    docker cp mongodb:path_to_store_mongodb/prosal  path_to_store_db_from_docker
    ```
 2. Import MONGODB databse to atlas DB
@@ -64,7 +64,7 @@ If all is fine then your site is working fine. Then you can open your site on lo
 ## Steps to deploy changes to production.:
 
 Let suppose you have made change in the file and you have checked all is fine and you are working in the deveop branch directly.
-Then you need follow the steps to deploy you changes :
+Then you need follow the steps to deploy your changes :
 
 1.  `git add 'you need put file name'`
 2.  `git commit -m 'Enter commit message'`

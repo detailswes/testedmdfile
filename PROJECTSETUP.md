@@ -39,7 +39,8 @@
 5. `sudo docker exec nginx nginx -s reload`
 6. Check docker container
    `docker-compose ps `
-7. Run command inside the docker container
+7. Create .env file in root directory and make changes according to credential of mongo db atlas database.
+8. Run command inside the docker container
    1. `docker exec -it app /bin/bash (app is container, You need to run this command then run all command that is below)`
    2. `composer install --ignore-platform-reqs`
    3. `composer update`
@@ -47,14 +48,14 @@
    5. `php artisan optimize`
    6. `npm run watch`
 
-## Backup From Atlas Live Db
+## Backup From Atlas Live DB  
 
 1. docker exec -it mongodb /bin/bash (this command take you inside the continer then you run the below command)
    ```sh
-   mongodump --uri="mongodb+srv://URL" --out "/var/www/html/path_to_store_mongodb"   (this is live site url,so csrfully run the commands)
-   docker cp mongodb:path_to_store_mongodb/prosal  path_to_store_db_from_docker
+   mongodump --uri="mongodb+srv://URL" --out "/var/www/html/path_to_store_mongodb" (URL is from mongo db atlas from where you want to export )
+   docker cp mongodb:/var/www/html/path_to_store_mongodb/prosal  path_where_you_want_to_store_db_from_docker
    ```
-2. Import MONGODB databse to atlas DB
+2. First create databse in MongoDB Atlas then  Import MONGODB databse to atlas DB
 
 ```sh
    mongorestore --uri mongoatlas_uri/prosal  path_from_where_you_import_db

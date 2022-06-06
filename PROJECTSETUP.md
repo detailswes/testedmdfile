@@ -1,11 +1,12 @@
-## Setup a development environment for our site from scratch
+## Setup a development environment  from scratch
 
 1. Install the dependencies and devDependencies and start the server.
 
    1. `git clone https://nylemalik@github.com/nylemalik/prosal.git`
-   2. `git branch`
-   3. `git checkout develop`
-   4. `git pull origin develop`
+   2. `cd prosal`
+   3. `git branch`
+   4. `git checkout develop`
+   5. `git pull origin develop`
 
 2. Install docker and docker compose
 3. From the root of the project
